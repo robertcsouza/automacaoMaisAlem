@@ -23,7 +23,7 @@ routes.get('/', (req, res)=>{
 
 //rotas de consultas a API externa
 
-routes.get('/pedido/:rastreio', _PedidoController2.default.index);
+routes.get('/pedido/?rastreio', _PedidoController2.default.index);
 routes.get('/pedido/status/:rastreio', _PedidoController2.default.status);
 routes.get('/pedido/descricao/:rastreio', _PedidoController2.default.descri);
 

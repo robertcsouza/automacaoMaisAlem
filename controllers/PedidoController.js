@@ -13,7 +13,7 @@ class PedidoController {
     
    async index(req,res){
 
-      const   rastreio  = req.params;
+      const   rastreio  = req.query.rastreio;
        
       const result = await _pedido2.default.findOne(rastreio)
 
